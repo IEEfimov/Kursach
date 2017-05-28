@@ -46,14 +46,82 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Classes\ExitWithoutSaveException.cs" />
+    <Compile Include="Classes\Tools.cs" />
+    <Compile Include="Forms\animo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\animo.Designer.cs">
+      <DependentUpon>animo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\askDiapazon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\askDiapazon.Designer.cs">
+      <DependentUpon>askDiapazon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImgInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImgInfo.Designer.cs">
+      <DependentUpon>ImgInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MassInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MassInfo.Designer.cs">
+      <DependentUpon>MassInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SaveAsk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SaveAsk.Designer.cs">
+      <DependentUpon>SaveAsk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General.Designer.cs">
+      <DependentUpon>General.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChildForm.Designer.cs">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewImageForm.Designer.cs">
+      <DependentUpon>NewImageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\animo.resx">
+      <DependentUpon>animo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\askDiapazon.resx">
+      <DependentUpon>askDiapazon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImgInfo.resx">
+      <DependentUpon>ImgInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MassInfo.resx">
+      <DependentUpon>MassInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SaveAsk.resx">
+      <DependentUpon>SaveAsk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General.resx">
+      <DependentUpon>General.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChildForm.resx">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewImageForm.resx">
+      <DependentUpon>NewImageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +130,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +144,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\play.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
