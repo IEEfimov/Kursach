@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 535);
+            this.ClientSize = new System.Drawing.Size(360, 446);
             this.Controls.Add(this.TransparentLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.PixelFormatLabel);

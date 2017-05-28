@@ -58,6 +58,14 @@ namespace Kursach.Forms
             PhysicSizeLabel.Text = (Math.Round(SizeH, 2).ToString() + 
                   "x" + Math.Round(SizeV, 2).ToString());
 
+            if (img.PixelFormat.Equals(PixelFormat.Alpha) ||
+                img.PixelFormat.Equals(PixelFormat.Format16bppArgb1555) ||
+                img.PixelFormat.Equals(PixelFormat.Format32bppArgb) ||
+                img.PixelFormat.Equals(PixelFormat.Format32bppPArgb) ||
+                img.PixelFormat.Equals(PixelFormat.Format64bppArgb) ||
+                img.PixelFormat.Equals(PixelFormat.Format64bppPArgb) ||
+                img.PixelFormat.Equals(PixelFormat.PAlpha)) TransparentLabel.Text = "есть";
+            else TransparentLabel.Text = "нет";
 
             this.ShowDialog();
         }
